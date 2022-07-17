@@ -1,7 +1,7 @@
 
   # Read Me Gen
 
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
   - [Summary](#Summary)
@@ -10,27 +10,26 @@
   - [Contributing](#Contributing)
   - [Tests](#Tests)
   - [Questions](#Questions)
-  
+
   ## Summary
-  undefined
-  
+  read me generator using node js
+
   ## Installation
-  
-  - ✅Npm
-  
+
+  - ✅Node Js, Inquirer, Npm
+
   ## Tests
-  undefined
-  
+  ![Image/GIF](screen-recording(1).gif)
+
   ## Questions
-  Feel free to reach out to me via my [GitHub profile](https://github.com/undefined) with any questions. My email address is undefined for job inquiries and other questions. Thank you!
-  
+  Feel free to reach out to me via my [GitHub profile](https://github.com/rheangocle) with any questions. My email address is rheangocle@gmail.com for job inquiries and other questions. Thank you!
+
   ## Contributing
   undefined
-  
+
   ---
-  #### Copyright © [2022] [undefined]
+  #### Copyright © [2022] [Rhea Le]
 
   #### License
+  ##### This project licensed under the MIT License. SPDX short identifier: MIT. Please follow the link in the badge for more details. 
   
-  ##### This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License
-      along with this program. If not, see <https://www.gnu.org/licenses
