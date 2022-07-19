@@ -81,7 +81,7 @@ const questions = () => {
         name: 'installation',
         validate: function (input) {
           if (input.length == 0) {
-            return console.log('A project description is required.');
+            return console.log('Please enter installations for this project.');
           } else { return true };
         }
       },
