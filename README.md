@@ -29,7 +29,7 @@
   Feel free to reach out to me via my [GitHub profile](https://github.com/rheangocle) with any questions. My email address is rheangocle@gmail.com for job inquiries and other questions. Thank you!
 
   ## Contributing
-  undefined
+  N/A
 
   ---
   #### Copyright © [2022] [Rhea Le]
