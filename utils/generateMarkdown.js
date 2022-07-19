@@ -155,38 +155,42 @@ function renderLicenseSection(license) {
   }
 }
 
+//Capitalize first letter of every word for titles, name, etc. 
+function capitalize(str) {
+  const words = str.split(" ");
+
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+  }
+
+  return words.join(" ");
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  //Get current 4 digit year
   const currentYear = new Date().getFullYear();
 
-  //Capitalize every word in title
-  const projectTitle = data.title.split(" ");
-  const installations = data.installation.split(" ");
-  const authorName = data.author.split(" ");
-
   return `
-  # ${projectTitle.map((title) => {
-    return title[0].toUpperCase() + title.substring(1);
-  }).join(" ")}
+  # ${capitalize(data.title)}
 
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   - [Summary](#Summary)
   - [Installations](#Installations)
-  - [License](#License)
-  - [Contributing](#Contributing)
   - [Tests](#Tests)
+  - [Mock-up](#Mock-up)
   - [Questions](#Questions)
+  - [Contributing](#Contributing)
+  - [License](#License)
 
   ## Summary
   ${data.description}
 
-  ## Installation
+  ## Installations
 
-  - ✅${installations.map((sentence) => {
-    return sentence[0].toUpperCase() + sentence.substring(1);
-  }).join(" ")}
+  - ✅${capitalize(data.installation)}
 
   ## Tests
   ${data.test}
@@ -201,11 +205,9 @@ function generateMarkdown(data) {
   ${data.contributor}
 
   ---
-  #### Copyright © [${currentYear}] [${authorName.map((title) => {
-    return title[0].toUpperCase() + title.substring(1);
-  }).join(" ")}]
+  #### Copyright © [${currentYear}] [${capitalize(data.author)}]
 
-  #### License Information: 
+  #### License
   ##### This project licensed under the ${renderLicenseName(data.license)}. SPDX short identifier: ${renderLicenseSection(data.license)}. Please follow the link in the badge for more details. 
   `
     ;
